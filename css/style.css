@@ -20,6 +20,7 @@
 body{
     background-color: var(--color-light-grey);
 }
+
 /**Nav-start**/
 .div__container{
     background: #FFFFFF 0 0 no-repeat padding-box;
@@ -31,12 +32,12 @@ body{
 }
 .logo a{
     text-decoration: none;
+    color: var(--color-primary);
 }
 .logo{
     text-align: left;
     font: normal normal 300 32px/37px Raleway;
     letter-spacing: 0;
-    color: var(--color-primary);
     opacity: 1;
     margin-top: 15px;
 }
@@ -49,6 +50,25 @@ body{
     font: normal normal bold 11px/15px Open Sans;
     letter-spacing: 3.28px;
 }
+@media (max-width: 750px) {
+    .div__container{
+        width: 100%;
+    }
+}
+@media (max-width: 750px) {
+    .logo {
+        top: 17px;
+        left: 25px;
+        width: 142px;
+        height: 37px;
+    }
+}
+@media (max-width: 750px) {
+    .links li{
+        display: none;
+    }
+}
+
 
 /**Nav-End**/
 
@@ -58,6 +78,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media(max-width: 750px) {
+    .header__container{
+        width: 100%;
+    }
 }
 .main__title{
     color: #000000;
@@ -87,13 +112,42 @@ body{
     border: none;
     color: #FFFFFF;
 }
+.btn__button p{
+    text-align: center;
+    font: normal normal bold 16px/22px Open Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
 .image__first{
     opacity: 1;
     background-position: bottom;
     width: 100%;
     height: auto;
 }
+@media(max-width: 750px) {
+    .main__title {
 
+    }
+}
+@media(max-width: 750px){
+.main__subtitle{
+        padding: 0 70px;
+    }
+}
+@media(max-width: 750px){
+    .btn__button{
+        padding: 22px 92px 23px 92px;
+        width: 90%;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+@media(max-width: 750px) {
+    .image__first{
+        width: 779px;
+        height: 267px;
+    }
+}
 /**main-start**/
 
 main.content {
@@ -101,17 +155,34 @@ main.content {
     margin-left: auto;
     margin-right: auto;
 }
+@media (max-width: 750px) {
+    main.content{
+        width: 100%;
+    }
+}
 /**section-start**/
 .content{
     background: #FFFFFF 0 0 no-repeat padding-box;
     box-shadow: 0 -5px 80px #00000029;
 }
-.stats h2{
+@media (max-width: 750px) {
+    section.stats{
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+.statistics__title{
     text-align: center;
     font: normal normal normal 36px/42px Raleway;
     letter-spacing: 0;
     color: #000000;
     padding-top: 100px;
+}
+@media (max-width: 750px) {
+   .statistics__title {
+      text-align: center;
+      padding-bottom: 28px;
+   }
 }
 .column{
     display: flex;
@@ -119,11 +190,24 @@ main.content {
     padding-top: 100px;
     padding-bottom: 120px;
 }
+@media(max-width: 750px) {
+    .column{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
 .articles{
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 150px;
+}
+@media(max-width: 750px){
+    .articles{
+        padding-bottom: 26px;
+    }
 }
 .circle {
     width: 63px;
@@ -174,10 +258,19 @@ main.content {
 /**section-end**/
 
 /**benefits-start**/
+
 .colums{
     background: #F7F7F7 0 0 no-repeat padding-box;
     padding-top: 106px;
     padding-bottom: 105px;
+}
+
+@media (max-width: 750px) {
+    .colums{
+        padding-top: 42px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 .benefits{
     background: #FFF 0 0 no-repeat padding-box;
@@ -190,9 +283,23 @@ main.content {
     height: 1124px;
     width: 370px;
 }
+@media(max-width: 750px) {
+    .benefits{
+        flex-direction: column-reverse;
+        width: 100%!important;
+        padding: 30px 21px 30px 21px;
+    }
+}
+
 .benefits__container{
     width:416px;
     height: 188px;
+}
+@media (max-width: 750px) {
+    .benefits__container{
+        width: 100%;
+        padding-bottom: 25px;
+    }
 }
 section.benefits {
     display: flex;
@@ -210,18 +317,42 @@ h2.benefits__title{
     color: var(--color-black);
     opacity: 1;
 }
+@media (max-width: 750px) {
+    .benefits__title{
+        padding-top: 27px;
+        padding-bottom: 10px;
+    }
+}
 .benefits__subtitle{
     text-align: left;
     font: normal normal normal 16px/22px Open Sans;
     letter-spacing: 0;
     color: #000000;
 }
+@media (max-width: 750px) {
+    .benefits__subtitle{
+        text-align: left;
+        font: normal normal normal 14px/19px Open Sans;
+        padding-top: 25px;
+    }
+}
 .mac{
     height: 219px;
     width: 386px;
 }
+@media(max-width: 750px) {
+    .mac{
+        width: 192px;
+        height: auto;
+    }
+}
 .border__bottom__mac{
     border-bottom: 4px solid #FB3B64;
+}
+@media (max-width: 750px) {
+    .border__bottom__mac{
+        display: none;
+    }
 }
 .benefits__phone{
     width: 1124px;
@@ -236,11 +367,27 @@ h2.benefits__title{
     margin-right: auto;
     margin-top: 37px;
 }
-
+@media(max-width: 750px) {
+    .benefits__phone{
+        width: 100%;
+        flex-direction: column;
+        padding: 30px 21px 30px 21px;
+    }
+}
 .iphone{
     width: 426px;
     height: 328px;
     margin: 29px 192px 13px 70px;
+}
+
+@media (max-width: 750px) {
+    .iphone{
+        width: 175px;
+        height: 135px;
+    }
+    .iphone__container{
+        padding-left: 100px;
+    }
 }
 h2.benefits__title__iphone{
     width: 246px;
@@ -249,6 +396,12 @@ h2.benefits__title__iphone{
     font: normal normal normal 36px/42px Raleway;
     color: #000000;
 }
+@media (max-width: 750px) {
+    .benefits__title__iphone{
+        text-align: left!important;
+        font: normal normal normal 30px/35px Raleway!important;
+    }
+}
 .benefits__subtitle__iphone{
     width: 416px;
     height: 66px;
@@ -256,9 +409,22 @@ h2.benefits__title__iphone{
     font: normal normal normal 16px/22px Open Sans;
     color: #000000;
 }
+@media (max-width: 750px) {
+    .benefits__subtitle__iphone{
+        width: 100%;
+        text-align: left;
+        font: normal normal normal 14px/19px Open Sans;
+        height: 77px;
+    }
+}
 .border__bottom__phone{
     border-bottom: 4px solid #08A6E4;
     width: 328px;
+}
+@media (max-width: 750px) {
+    .border__bottom__phone{
+        display: none;
+    }
 }
 section.benefits__double {
     display: flex;
@@ -266,8 +432,19 @@ section.benefits__double {
     justify-content: center;
     align-items: center;
 }
+@media(max-width: 750px) {
+    .benefits__double{
+        width: 100%;
+        margin: 41px 29px 41px 29px!important;
+    }
+}
 .benefits__double__part1{
     display: flex;
+}
+@media(max-width: 750px) {
+    .benefits__double__part1{
+        display: block;
+    }
 }
 .benefits__double__part2{
     width: 623px;
@@ -277,6 +454,11 @@ section.benefits__double {
     border-radius: 5px;
     margin-right: 61px;
 }
+@media (max-width: 750px) {
+    .benefits__double__part2{
+        
+    }
+}
 h2.benefits__double__title{
     width: 348px;
     height: 84px;
@@ -285,19 +467,39 @@ h2.benefits__double__title{
     color: #000000;
     margin: 70px 240px 30px 35px
 }
+@media (max-width: 750px) {
+    h2.benefits__double__title{
+        font: normal normal normal 30px/35px Raleway;
+    }
+}
 p.benefits__double__subtitle {
     width: 553px;
     height: 72px;
     margin: 30px 34px 44px 36px;
+}
+@media (max-width: 750px) {
+    p.benefits__double__subtitle{
+        font: normal normal normal 14px/19px Open Sans;
+    }
 }
 .benefits__double__border{
     width: 328px;
     border-bottom: 4px solid #55DFB4;
     margin: 44px 260px 71px 36px;
 }
-
+@media (max-width: 750px) {
+    .benefits__double__border{
+        display: none;
+    }
+}
 .benefits__double__img{
     background-color: #55DFB4;
+}
+@media (max-width: 750px){
+    .benefits__double__img{
+        width: 100%;
+        height: 208px;
+    }
 }
 img.trumpet{
     width: 296px;
@@ -310,6 +512,12 @@ img.trumpet{
 .pricing{
     background-color: #FFFFFF;
     margin-top: 100px;
+}
+@media (max-width: 750px) {
+    .pricing{
+        width: 100%;
+        flex-direction: column;
+    }
 }
 .pricing h2{
     font: normal normal normal 36px/42px Raleway;
@@ -327,6 +535,11 @@ img.trumpet{
     height: 616px;
     margin-left: auto;
     margin-right: auto;
+}
+@media (max-width: 750px) {
+    .pricing__box{
+
+    }
 }
 .border__basic.first{
     width: 372px;
